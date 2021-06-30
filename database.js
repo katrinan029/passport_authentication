@@ -1,9 +1,9 @@
-// const postgresPW = require("./config.js");
+const postgresPW = require("./config.js");
 
 const Sequelize = require("sequelize");
 
 const user = "postgres";
-const password = "postgres";
+const password = postgresPW.password;
 const host = "localhost";
 const database = "testingpassport";
 const sequelize = new Sequelize(database, user, password, {
